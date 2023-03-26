@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="./web-components.js"></script>
+    <script src="./button.js"></script>
+    <script src="./text.js"></script>
+    <script src="./custom-template.js"></script>
+    <title>Meu componente</title>
+  </head>
+  <body>
+    <my-component></my-component>
+
+    </br>
+
+    <my-text texto="BLA BLA BLA"></my-text>
+    <my-text texto="Segundo uso do my-text"></my-text>
+
+    </br>
+
+    <my-button title="alerta unisinos" onclick="alertUnisinos()"></my-button>
+    <my-button title="quem é o aluno?" onclick="alertAluno()"></my-button>
+  
+    </br>
+  </br>
+
+    <custom-template>
+      <h2 slot="title">Título do componente</h2>
+      <p slot="content">Conteúdo do componente</p>
+    </custom-template>
+
+  </body>
+</html>
